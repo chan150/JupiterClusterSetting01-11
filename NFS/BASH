@@ -47,6 +47,9 @@ export JAVA_LIBRARY_PATH=${JAVA_LIBRARY_PATH}:${HADOOP_COMMON_LIB_NATIVE_DIR}
 export GIT_PATH=/usr/bin/
 export PATH=$GIT_PATH:$PATH
 
+# OPEN MPI 3.1.1
+export OMPI_PATH=/data/himchan/Util/openmpi-3.1.1-bin
+export PATH=$OMPI_PATH/bin:$PATH
 
 # MVAPICH2
 #export MPI_PATH=$JUPITER_HOME/Util/mvapich2-2.1-bin
