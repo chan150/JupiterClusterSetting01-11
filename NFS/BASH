@@ -1,0 +1,87 @@
+# .bashrc
+
+# prompt
+#export PS1="\e[0;31m[\h|\W|\T]\\$ \e[m"
+#"\e[0;31[m\h \W]\$ \e]m"
+
+export JUPITER_HOME=/data/himchan
+export PATH=$JUPITER_HOME/Shell:$PATH
+
+#MAVEN
+export MAVEN_HOME=$JUPITER_HOME/Util/apache-maven-3.3.9
+export PATH=$MAVEN_HOME/bin:$PATH
+export MAVEN_OPTS="-Xmx2g -XX:ReservedCodeCacheSize=512m"
+
+#ANT
+export ANT_HOME=$JUPITER_HOME/Util/apache-ant-1.9.7
+export PATH=$ANT_HOME/bin:$PATH
+
+# Scala-lang path
+export SCALA_HOME=$JUPITER_HOME/Util/scala-2.11.12
+#export SCALA_HOME=$JUPITER_HOME/Util/scala-2.10.6
+export PATH=$SCALA_HOME/bin:$PATH
+
+# SBT path
+export SBT_HOME=$JUPITER_HOME/Util/sbt-0.13.13
+export PATH=$SBT_HOME/bin:$PATH
+
+# SPARK
+#export SPARK_HOME=$JUPITER_HOME/Release/TrillionG-Standalone/spark-2.1.0
+export SPARK_HOME=$JUPITER_HOME/NFS/spark-2.3.0
+export PATH=$SPARK_HOME/bin:$SPARK_HOME/sbin:$PATH
+
+# HADOOP
+export HADOOP_HOME=$JUPITER_HOME/NFS/hadoop-2.7.2
+export HADOOP_PREFIX=$HADOOP_HOME
+export HADOOP_COMMON_LIB_NATIVE_DIR=${HADOOP_PREFIX}/lib/native
+#export HADOOP_OPTS=${HADOOP_OPTS} -Djava.library.path=$HADOOP_PREFIX/lib
+
+# PATH
+export PATH=$Home/Shell:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
+
+# natie lib loader
+export JAVA_LIBRARY_PATH=${JAVA_LIBRARY_PATH}:${HADOOP_COMMON_LIB_NATIVE_DIR}
+
+# git path
+#export GIT_PATH=$JUPITER_HOME/Util/git
+export GIT_PATH=/usr/bin/
+export PATH=$GIT_PATH:$PATH
+
+
+# MVAPICH2
+#export MPI_PATH=$JUPITER_HOME/Util/mvapich2-2.1-bin
+#export PATH=$MPI_PATH/bin:$PATH
+
+#########################################
+
+export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/usr/local/lib64:/usr/lib64:$HADOOP_HOME/lib/native:$LD_LIBRARY_PATH
+export LDLIBRARYPATH=$LD_LIBRARY_PATH
+
+GNUPLOT_PATH=$JUPITER_HOME/Util/gnuplot
+export PATH=$GNUPLOT_PATH/bin:$PATH
+
+# gcc 6.3.0
+export PATH=/opt/rh/devtoolset-7/root/usr/bin/:$PATH
+#export PATH=/data/himchan/Graph/SIMD/binutils-2.30.0/binutils:$JUPITER_HOME/Util/gcc-6.3.0/bin:$PATH
+
+# alluxio 1.7.1
+ALLUXIO_PATH=/data/himchan/NFS/alluxio-1.7.1
+export PATH=$ALLUXIO_PATH/bin:$PATH
+
+# ignite 2.4.0
+IGNITE_PATH=$JUPITER_HOME/NFS/ignite-2.4.0
+export PATH=$IGNITE_PATH/bin:$PATH
+
+# JAVA 
+export JAVA_HOME=$JUPITER_HOME/Util/jdk1.8.0_112
+export PATH=$JAVA_HOME/bin:$PATH
+
+#tput civis # invisible
+
+
+# added by Anaconda3 4.4.0 installer
+#  export PATH="/data/himchan/Util/anaconda3/bin:$PATH"
+
+
+ulimit -u 4096
+ulimit -n 4096
