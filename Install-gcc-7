@@ -1,0 +1,5 @@
+yum install centos-release-scl -y
+yum install devtoolset-7-gcc-c++ -y
+
+export PATH=/opt/rh/devtoolset-7/root/usr/bin/:$PATH
+gcc -v
