@@ -1,0 +1,36 @@
+127.0.0.1            localhost.localdomain   localhost
+
+10.150.20.142	jupiter01g	node01
+10.150.20.143	jupiter02g	node02
+10.150.20.144	jupiter03g	node03
+10.150.20.145	jupiter04g	node04
+10.150.20.146	jupiter05g	node05
+10.150.20.147	jupiter06g	node06
+10.150.20.148	jupiter07g	node07
+10.150.20.149	jupiter08g	node08
+10.150.20.150	jupiter09g	node09
+10.150.20.151	jupiter10g	node10
+10.150.20.152	jupiter11g	node11
+
+10.150.20.40	jupiter12
+10.150.20.41	jupiter13
+10.150.20.42	jupiter14
+10.150.20.43	jupiter15
+10.150.20.44	jupiter16
+10.150.20.45	jupiter17
+10.150.20.46	jupiter18
+10.150.20.47	jupiter19
+10.150.20.48	jupiter20
+10.150.20.49	jupiter21
+
+172.168.0.101	jupiter01
+172.168.0.102	jupiter02
+172.168.0.103	jupiter03
+172.168.0.104	jupiter04
+172.168.0.105	jupiter05
+172.168.0.106	jupiter06
+172.168.0.107	jupiter07
+172.168.0.108	jupiter08
+172.168.0.109	jupiter09
+172.168.0.110	jupiter10
+172.168.0.111	jupiter11
