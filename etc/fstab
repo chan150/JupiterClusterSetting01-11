@@ -1,0 +1,18 @@
+# JupiterClusterSetting01-11
+
+#
+# /etc/fstab
+# Created by anaconda on Thu May 14 15:58:07 2015
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+UUID=311b1058-b891-41b7-9b92-14c61fd1b7fa /                       ext4    defaults        1 1
+UUID=6990445c-0402-40a1-8cc6-a94e5be08c70 swap                    swap    defaults        0 0
+tmpfs                   /dev/shm                tmpfs   defaults        0 0
+devpts                  /dev/pts                devpts  gid=5,mode=620  0 0
+sysfs                   /sys                    sysfs   defaults        0 0
+proc                    /proc                   proc    defaults        0 0
+/dev/sdb1 /data ext4 defaults 0 0
+#/dev/nvme0n1p1 /data2 ext4 defaults 0 0
+jupiter01:/data/himchan/NFS /data/himchan/NFS nfs hard 0 0
