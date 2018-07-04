@@ -1,0 +1,10 @@
+# by root user
+
+#boost
+Multi_CMD.sh "cd /data/himchan/Util/boost_1_61_0/; ./bootstrap.sh --prefix=/usr; ./b2 install"
+Multi_CMD.sh "cd /data/himchan/Util/boost_1_61_0/tools/build; ./bootstrap.sh; ./b2 install --prefix=/usr"
+
+#cmake
+Multi_CMD.sh "cd /data/himchan/Util/cmake-3.12.0-rc2; ./configure --prefix=/usr; gmake && make install"
+
+
