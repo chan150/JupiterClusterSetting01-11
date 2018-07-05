@@ -1,0 +1,5 @@
+# NFS directory turn off
+find /etc/fstab  -exec sed -i 's/jupiter01:\/data\/himchan\/NFS/#jupiter01:\/data\/himchan\/NFS/g' {} \;
+
+# NFS directory turn on
+find /etc/fstab  -exec sed -i 's#/jupiter01:\/data\/himchan\/NFS/jupiter01:\/data\/himchan\/NFS/g' {} \;
