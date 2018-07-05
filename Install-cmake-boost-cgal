@@ -1,10 +1,19 @@
 # by root user
 
 #boost
-Multi_CMD.sh "cd /data/himchan/Util/boost_1_61_0/; ./bootstrap.sh --prefix=/usr; ./b2 install"
-Multi_CMD.sh "cd /data/himchan/Util/boost_1_61_0/tools/build; ./bootstrap.sh; ./b2 install --prefix=/usr"
+Multi_CMD.sh "cd /data/himchan/Util/boost_1_61_0/; ./bootstrap.sh; ./b2 install"
+#Multi_CMD.sh "cd /data/himchan/Util/boost_1_61_0/tools/build; ./bootstrap.sh; ./b2 install --prefix=/usr"
 
 #cmake
 Multi_CMD.sh "cd /data/himchan/Util/cmake-3.12.0-rc2; ./configure --prefix=/usr; gmake && make install"
 
 
+# clean CMake in cgal
+# Multi_CMD.sh "rm -rf /data/himchan/Util/cgal-releases-CGAL-4.12/CMakeFiles /data/himchan/Util/cgal-releases-CGAL-4.12/CMakeCache.txt"
+
+# cgal
+# $ by normal user
+Multi_CMD.sh "cd /data/himchan/Util/cgal-releases-CGAL-4.12; cmake .;"
+
+# by root user
+Multi_CMD.sh "cd /data/himchan/Util/cgal-releases-CGAL-4.12; make && make install"
