@@ -1,0 +1,2 @@
+#/data/install	*(ro)
+/data/himchan/NFS     *(rw,no_root_squash,no_all_squash,async,insecure,no_subtree_check,anonuid=2000,anongid=2000)
